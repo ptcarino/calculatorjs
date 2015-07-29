@@ -175,3 +175,13 @@ function memoryclr() {
     memory = 0;
     document.getElementById("memory").value = memory;
 }
+
+function play() {
+    var bgm = document.getElementById("bgm");
+    bgm.play();
+}
+
+function stop() {
+    var bgm = document.getElementById("bgm");
+    bgm.pause();
+}

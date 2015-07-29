@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="calculator.js"></script>
 </head>
-<body>
+<body onload="">
 <p class="label">
     Javascript Calculator
 </p>
@@ -24,7 +24,7 @@
         <input type="button" name="btn_modulo" value="%" class="btn op" onclick="modulo()">
         <input type="button" name="btn_exp" value="x&#8319;" class="btn op" onclick="exponent()">
         <input type="text" name="num2" placeholder="Operand 2" autocomplete="off" class="input operand" id="operand2"><br>
-        <input type="button" name="equals" value="=" class="btn op">
+        <input type="button" name="btn_equals" value="=" class="btn op" id="equals" onclick="stop()">
         <input type="text" name="txtresult" class="input result" id="result" readonly>
         <p>
             M: <input type="text" name="txtmemory" class="input memory" id="memory" readonly>
@@ -49,5 +49,6 @@
         </p>
     </div>
 </div>
+<audio id="bgm" src="bgm/Foxsky%20-%20Kirby%20Smash.mp3" preload="auto" loop />
 </body>
 </html>
